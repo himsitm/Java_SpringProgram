@@ -1,0 +1,22 @@
+1) Spring Boot Flow for Bean and Component Scanning
+-------------------------------------------------
+Searching directory [D:\Workspace\GITHUB\Spring\spring-first-program\target\classes\com\example\spring\basic\springfirstprogram/**/*.class] for files match
+Now it found two classes which one:
+	BinarySearchImpl.class
+	BubbleSortAlgorithm.class
+Identified candidate component class: file [D:\Workspace\GITHUB\Spring\spring-first-program\target\classes\com\example\spring\basic\springfirstprogram\BinarySearchImpl.class]
+Identified candidate component class: file [D:\Workspace\GITHUB\Spring\spring-first-program\target\classes\com\example\spring\basic\springfirstprogram\BubbleSortAlgorithm.class]
+
+Creating shared instance of singleton bean 'springFirstProgramApplication'
+Creating shared instance of singleton bean 'binarySearchImpl'
+Creating shared instance of singleton bean 'bubbleSortAlgorithm'
+Autowiring by type from bean name 'binarySearchImpl' via constructor to bean named 'bubbleSortAlgorithm'
+Finished creating instance of bean 'binarySearchImpl'
+-------------------------------------------------
+
+
+2) If we have multiple component of same type then it will through error. So to handle that we need to use @Primary
+which will allow to pick primary first.
+-------------------------------------------------
+
+
